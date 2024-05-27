@@ -1,0 +1,275 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="598,1761.3333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.Word</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,1696.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Score" />
+      <Variable x:TypeArguments="x:String" Name="Rank" />
+      <Variable x:TypeArguments="x:String" Name="Popularity" />
+      <Variable x:TypeArguments="x:String" Name="Members" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Solo Leveling | Manhwa - MyAnimeList.net" sap:VirtualizedContainerService.HintSize="450,1608.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c2bdb846-1b25-47b0-9dfc-e9d2793ef374" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1326.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Score" />
+              <Variable x:TypeArguments="x:String" Name="Rank" />
+              <Variable x:TypeArguments="x:String" Name="Popularity" />
+              <Variable x:TypeArguments="x:String" Name="Members" />
+              <Variable x:TypeArguments="x:String" Name="Synopsis" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text '8.67'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="c2bdb846-1b25-47b0-9dfc-e9d2793ef374" TextString="[Score]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://myanimelist.net/manga/121496/Solo_Leveling?q=solo%20&amp;cat=manga" CvTextArea="552, 473, 84, 31" CvType="AnyWordGroup" DesignTimeRectangle="551, 476, 90, 25" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='content' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='8.67' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='score-label score-8' /&gt;" Guid="84e55560-2f72-4040-a5f0-73a751eb15f0" InformativeScreenshot="5ac917e88f367e8685f8b8b52df72e4c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Solo Leveling | Manhwa - MyAnimeList.net' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Ranked #65'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="c2bdb846-1b25-47b0-9dfc-e9d2793ef374" TextString="[Rank]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://myanimelist.net/manga/121496/Solo_Leveling?q=solo%20&amp;cat=manga" CvTextArea="773, 449, 52, 24" CvType="AnyWordGroup" DesignTimeRectangle="774, 446, 51, 29" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='content' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl type='' tag='STRONG' class='' /&gt;" Guid="addf7095-1eb7-470f-80b7-6ceb08d7c8eb" InformativeScreenshot="c6fbac1e1bbf78d4aa2cda408ed239ab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Solo Leveling | Manhwa - MyAnimeList.net' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="687, 449, 138, 24" CvTextArgument="Ranked #65" CvType="Text" DesignTimeRectangle="689, 446, 136, 29" FullSelectorArgument="&lt;webctrl parentid='content' tableRow='1' tag='TABLE' /&gt;&lt;webctrl parentid='content' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl parentid='content' type='' tag='SPAN' class='numbers ranked' aaname='Ranked ' check:innerText='Ranked #65' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Popularity #6'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="c2bdb846-1b25-47b0-9dfc-e9d2793ef374" TextString="[Popularity]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://myanimelist.net/manga/121496/Solo_Leveling?q=solo%20&amp;cat=manga" CvTextArea="971, 450, 37, 22" CvType="AnyWordGroup" DesignTimeRectangle="972, 446, 35, 29" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='content' tableRow='1' tag='TABLE' /&gt;&lt;webctrl idx='2' tableRow='1' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='STRONG' /&gt;" Guid="6e5a5a75-3f23-4b9c-824d-400583b7dca9" InformativeScreenshot="e88c86367a46a4d8e00527f19970e0ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Solo Leveling | Manhwa - MyAnimeList.net' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="858, 449, 150, 28" CvTextArgument="Popularity #6" CvType="Text" DesignTimeRectangle="861, 446, 146, 29" FullSelectorArgument="&lt;webctrl parentid='content' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Popularity ' parentid='content' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl aaname='Popularity ' parentid='content' type='' tag='SPAN' class='numbers popularity' check:innerText='Popularity #6' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Members 494,955'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="c2bdb846-1b25-47b0-9dfc-e9d2793ef374" TextString="[Members]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://myanimelist.net/manga/121496/Solo_Leveling?q=solo%20&amp;cat=manga" CvTextArea="1145, 449, 102, 27" CvType="AnyWordGroup" DesignTimeRectangle="1147, 446, 100, 29" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='content' tableRow='1' tag='TABLE' /&gt;&lt;webctrl idx='3' tableRow='1' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='STRONG' /&gt;" Guid="78e78633-4c51-4323-96c8-37df68d501c9" InformativeScreenshot="05f5a11656163249ec792ad21c0a87bc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Solo Leveling | Manhwa - MyAnimeList.net' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="1041, 449, 206, 27" CvTextArgument="Members 494,955" CvType="Text" DesignTimeRectangle="1043, 446, 204, 29" FullSelectorArgument="&lt;webctrl parentid='content' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Members ' parentid='content' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl aaname='Members ' parentid='content' type='' tag='SPAN' class='numbers members' check:innerText='Members 494,955' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,126.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Score + Rank + Popularity + Members]" />
+            <uix:NGetText DisplayName="Get Text 'EditSynopsis'" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="c2bdb846-1b25-47b0-9dfc-e9d2793ef374" TextString="[Synopsis]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://myanimelist.net/manga/121496/Solo_Leveling?q=solo%20&amp;cat=manga" DesignTimeRectangle="535, 701, 1198, 268" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl parentid='content' tableRow='1' tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;span' parentid='content' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl type='' parentid='content' class='' tag='SPAN' /&gt;" Guid="92e52c78-1a1c-40f0-bd68-c24a5f4bf92a" InformativeScreenshot="104b8e2263621305d7c694f217c5d8df.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Solo Leveling | Manhwa - MyAnimeList.net' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="531, 665, 1203, 22" CvTextArgument="Synopsis Edit" CvType="Text" DesignTimeRectangle="535, 657, 1203, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='content' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='TABLE' /&gt;&lt;webctrl type='' tag='H2' class='' aaname='Synopsis' check:innerText='Edit&amp;#xD;&amp;#xA;Synopsis' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="D:\RPA\UiPath\ExtractAnimeDetailsWeek12\Sole Levelling.docx" sap:VirtualizedContainerService.HintSize="354,65.33333333333333" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+              <p:WordApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WordDocument">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,218" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="434,133.33333333333334" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="[Synopsis]" />
+                  </Sequence>
+                </ActivityAction>
+              </p:WordApplicationScope.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </p:WordApplicationScope>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="354,50.666666666666664" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1296.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,1212" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" TemplatePath="Stats.xlsx" UseTemplate="True" WorkbookPath="Stats.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="StatsExcel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,886" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataTable" Name="dt_Stats" />
+                              <Variable x:TypeArguments="x:Int32" Name="RowNumber" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:WriteCellX Cell="[StatsExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,204.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[Score]" />
+                            <ueab:WriteCellX Cell="[StatsExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,204.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[Rank]" />
+                            <ueab:WriteCellX Cell="[StatsExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,204.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[Popularity]" />
+                            <ueab:WriteCellX Cell="[StatsExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;B5&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,187.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[Members]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANvSURBVGhD7ZppTxNBGMfhQxC+hRIj8YifQE2MFK8Qj5cqvjARNWg0UTAYAtFEg8FAohQUldAQxNajL8ohCApC5RShgCAoBkppaGnLOE93dnZ2dogl7tKu6T/5ke3MM7vz2+xFdlNwUmW2HKxKwxRh3JggBiUIMJdeTAEmjZ0zhk7egvFiRCtIJGCOFpUANDAFZkGSwAtw2Jhhz/PAnNNBAI4rUYEZKAIBODlEnWbADQKJdLXZKEEQEHWYhqRAvEkKxJukQLz5fwQyD9egPcdrKbtynmqKWdhaYFt2tbBOBKybHZt5pIb27Tj2RNUHv9mxPFTgrrUbsVkNRdDRvCbNACD/TgupUpJb6BTWAjCR2xWdqL13Bi0tB8kIJa9bPbS2qXmMtEqB3+y6eNYVgHimvWgntwf2nq5Hy/5VUqFkPYHC8g7hpNks+gIow2KN1usqALG9+0qL4TDpG/5FetThBWBCzx3DpPfvOZHviI7TXQCSV+KK1lTUuUmLNrxAdeMg6VFndt6P7C3j6HFDP6qs/0I5ecVAAa8viK7da0ORyBpp0YYVOHXVgda40gVvAF0odqGMLCu6VNocPR9krI0DdKwhArGEFehyz5JWKT58zhw410D7+W11D8zRPt0EAqthsqTNSiBElpTIAnCS83u/uLJLtdFNERjxLKBa+xD5pc6NsnaypEQWgKsOn9JHH9HNB+0UZ8cE6ZFimMB2fHMbHPtNWqS8dEkr5CML1L0ZIS2xxzABaN9/1kav+2PfF+l9gY8s4OyYJC2xx1AB4GJJMwoEwyj7fCNt4yMLfOqfIy2xx3ABgJ08wGc9gbaeadXxv6nnAFvIw0cWcHVNkRYpNueoZiy/rYQSqMJ3WDafh35qxm5EwL8SQlOzPg25BdL2dBeAxw42cD/ZzT2ab0RAlFA4QtepuwBcpWCvsblV/kE19l8FOt0/aD0VgGed/tF5iqN1nBaJYGsB+WEM4O8FEzNLaGuWMpbfVv1b5Yn34Ys+VZ+I6/ff03oqoCf7zthQOCw9T3ybXEQ5l18J6/TAEAHgmX04+pgM/6qK+vXCMAF4bBa1641hAptFUiDeJAXiDQiY+RWTDwTM/JKvFwRM/5o1HWPeF92m/9SA/AGJQxgfU5CowBzVH3vI4A72c5sQRrSCeODH9GC4z21SUv8AdqEp/nggqyEAAAAASUVORK5CYII=" InformativeScreenshot="98221c4fc48b67bba4496cc9a4c3b13b.jpg" Selector="&lt;html app='chrome.exe' title='Solo Leveling | Manhwa - MyAnimeList.net' /&gt;" Title="Solo Leveling | Manhwa - MyAnimeList.net" Url="https://myanimelist.net/manga/121496/Solo_Leveling?q=solo%20&amp;cat=manga" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
